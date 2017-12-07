@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Multiplicación</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="page2.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Finger+Paint|Montserrat" rel="stylesheet">
+</head>
+<html>
+<body>
+  <div class="titulo">
+    <h1>La Multiplicación</h1>
+    <h2 id="subtitulo">¿Qué es la multiplicación?</h2>
+  </div>
+  <div class="contenido">
+   <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="Aritmetica Images/multiplicacionAnim1.svg" style="width:80%">
+    <div class="text">La multiplicación es una de las cuatro operaciones básicas de la aritmética.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="Aritmetica Images/multiplicacionAnim2.svg" style="width:80%">
+    <div class="text">Puede verse como la acción de sumar un número tantas veces como indique otro número. Estos números se llaman multiplicando y multiplicador.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="Aritmetica Images/multiplicacionAnim3.svg" style="width:80%">
+    <div class="text">El multiplicando indica el número a ser multiplicado.
+      El multiplicador indica el número de veces que se suma el multiplicando. </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="Aritmetica Images/multiplicacionAnim4.svg" style="width:80%">
+    <div class="text">La multiplicación está relacionada con el área geométrica.
+      Puedes contar objetos sobre la superficie de un rectángulo o calcular su superficie con ayuda de la multiplicación.</div>
+  </div>
+  <div class="mySlides fondo">
+    <img src="Aritmetica Images/Caver.svg" style="width:80%">
+    <div class="text">Puedes empezar a multiplicar con uno de nuestros juegos.</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Resta</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="page2.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo|Finger+Paint|Montserrat" rel="stylesheet">
+</head>
+<html>
+<body>
+  <div class="titulo">
+    <h1>La Resta</h1>
+    <h2 id="subtitulo">¿Qué es la resta?</h2>
+  </div>
+  <div class="contenido">
+   <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="Aritmetica Images/restaAnim1.svg" style="width:80%">
+    <div class="text">La resta es una de las operaciones básicas de la aritmética.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="Aritmetica Images/restaAnim2.svg" style="width:80%">
+    <div class="text">Con ella puedes eliminar un número de otro para obtener una cantidad menor.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="Aritmetica Images/restaAnim3.svg" style="width:80%">
+    <div class="text">También puedes verlo como la eliminación de objetos de una colección para obtener otra de menor tamaño.</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="Aritmetica Images/Caver1.svg" style="width:80%">
+    <div class="text">La resta fue la primera operación matemática descubierta por el hombre.</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="Aritmetica Images/Caver2.svg" style="width:80%">
+    <div class="text">Debido a que sus recursos eran escasos y difíciles de reponer, disminuían con el tiempo.</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="Aritmetica Images/Caver.svg" style="width:80%">
+    <div class="text">Ya sea que estés contando números, objetos o personas, la resta te será útil.</div>
+  </div>
+  <div class="mySlides fondo">
+    <img src="Aritmetica Images/Caver.svg" style="width:80%">
+    <div class="text">Puedes empezar a restar con uno de nuestros juegos.</div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  </div>
+</body>
+</html>

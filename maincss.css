@@ -1,0 +1,210 @@
+/*----El Laboratorio----*/
+
+/*---Estilos generales---*/
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  color: #ffcfeb;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+a:active {
+  color: #b380ff;
+  text-decoration: none;
+}
+
+
+.titulo {
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 24px;
+  color: white;
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  background-color: #221c24;
+  border-top: solid #ffcfeb;
+  border-right: solid #ffcfeb;
+  border-left: solid #ffcfeb;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#subtitulo {
+  font-family: 'Finger Paint', lucida;
+  font-size: 24px;
+  color: #ff8099;
+}
+
+.banner {
+  text-align: center;
+  background-color: #221c24;
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  border-bottom: solid #ffcfeb;
+  border-right: solid #ffcfeb;
+  border-left: solid #ffcfeb;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.vitrina{
+  display: inline-block;
+  position: absolute;
+  margin: 10px 10px 100px 250px;
+}
+
+.vitrina img {
+  overflow: auto;
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 350px;
+  padding: 20px;
+  border: 5px solid #ffcfeb;
+  border-radius: 100px;
+  background-color: #221c24;
+}
+
+.opciones {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 10px 70px 70px 100px;
+  text-align: left;
+}
+
+.barra {
+  position: absolute;
+  float: left;
+  max-width: 220px;
+  margin: 40px 0px 0px 0px;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* button main navigation bar*/
+.buttonm {
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  background-color: #E63D94;
+  padding: 20px 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonm:hover{
+  background-color: #F21F7D;
+}
+
+.buttonm2 {
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  background-color: #DD52A3;
+  padding: 20px 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonm2:hover{
+  background-color: #F21F7D;
+}
+
+.buttonm3 {
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  background-color: #D466B2;
+  padding: 20px 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonm3:hover{
+  background-color: #F21F7D;
+}
+
+.buttonm4 {
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  background-color: #C885C9;
+  padding: 20px 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonm4:hover{
+  background-color: #F21F7D;
+}
+
+.buttonm5 {
+  color: #ffffff;
+  border: none;
+  width: 200px;
+  background-color: #BBA3E0;
+  padding: 20px 40px;
+  font-family: Montserrat;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonm5:hover {
+  background-color: #F21F7D;
+}
+
+.footer {
+  position: relative;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  font-family: 'Monserrat', arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+body {
+  position: relative;
+  background-color: #aaccff;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+  -moz-column-rule: 1px solid lightblue; /* Firefox */
+  column-rule: 1px solid lightblue;
+  margin-bottom: 150px;
+}
+
+h3 {
+  position: relative;
+  color : #ffffff;
+  font-family: Finger Paint;
+  font-size: 32px;
+  text-shadow: 4px 4px #ff8099;
+}
+
+@keyframes fondo {
+  15%  {background-color: #E63D94;}
+  100% {background-color: #BBA3E0;}
+}
+
+a img:hover {
+  opacity: 0.8;
+  background-color: #BBA3E0;
+  animation-name: fondo;
+  animation-duration: 1s;
+}
